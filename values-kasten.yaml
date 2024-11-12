@@ -17,6 +17,6 @@ kasten:
     location-profile-1:
       name: my-location-profile               
       secretKey: secret/data/hub/aws-creds    # Vault path for values-secret entry to be used for S3 auth
-      bucketName: your-bucket-name            # Replace with the AWS S3 bucket name to store backup data
-      immutable: false                        # Set true only if AWS S3 bucket was created with Versioning/Object Lock enabled; otherwise false
+      bucketName: rhvp-test-bucket            # Replace with the AWS S3 bucket name to store backup data
+      immutable: true                        # Set true only if AWS S3 bucket was created with Versioning/Object Lock enabled; otherwise false
       protectionPeriod: 168h0m0s # 7 Days     # Optional, override default immutablility period. Caution!
