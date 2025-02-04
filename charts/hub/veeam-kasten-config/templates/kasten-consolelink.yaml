@@ -1,0 +1,8 @@
+apiVersion: console.openshift.io/v1
+kind: ConsoleLink
+metadata:
+  name: kasten
+spec:
+  href: 'https://k10-route-kasten-io.{{ .Values.global.localClusterDomain }}/k10/'
+  location: ApplicationMenu
+  text: "Veeam Kasten Dashboard"
