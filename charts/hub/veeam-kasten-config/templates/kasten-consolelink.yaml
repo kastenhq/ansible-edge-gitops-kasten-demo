@@ -6,3 +6,5 @@ spec:
   href: 'https://k10-route-kasten-io.{{ .Values.global.localClusterDomain }}/k10/'
   location: ApplicationMenu
   text: "Veeam Kasten Dashboard"
+  applicationMenu:
+    section: Data Protection
